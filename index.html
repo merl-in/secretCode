@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Crack the Code!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <!-- title or heading div-->
+                    <h2>Crack the Code</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div id="column1">
+                    <!-- player guesses for the code -->
+                    <h4>Your code :</h4>
+
+                    <div id="code-grid">
+                        <div id="col1" class="digits"><span id="up1" class="text-dark up"
+                                unselectable="on">&#x25B2;</span><span id="firstEntry">5</span><span id="down1"
+                                class="text-dark down" unselectable="on">&#x25BC;</span></div>
+                        <div id="col2" class="digits"><span id="up2" class="text-dark up"
+                                unselectable="on">&#x25B2;</span><span id="secondEntry">2</span><span id="down2"
+                                class="text-dark down" unselectable="on">&#x25BC;</span></div>
+                        <div id="col3" class="digits"><span id="up3" class="text-dark up"
+                                unselectable="on">&#x25B2;</span><span id="thirdEntry">9</span><span id="down3"
+                                class="text-dark down" unselectable="on">&#x25BC;</span></div>
+                        <div id="col4" class="digits"><span id="up4" class="text-dark up"
+                                unselectable="on">&#x25B2;</span><span id="fourthEntry">0</span><span id="down4"
+                                class="text-dark down" unselectable="on">&#x25BC;</span></div>
+                        <button id="send">Go</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-6 col-lg-3">
+                <div id="column2">
+                    <h4>Result :</h4>
+
+                    <div id="guess-block">
+                        <!-- results of the guess -->
+
+                        <div id="guess-col1" class="digits2"><span id="guess-firstEntry">5</span></div>
+                        <div id="guess-col2" class="digits2"><span id="guess-secondEntry">5</span></div>
+                        <div id="guess-col3" class="digits2"><span id="guess-thirdEntry">5</span></div>
+                        <div id="guess-col4" class="digits2"><span id="guess-fourthEntry">5</span></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="space">
+
+                </div>
+                <div id="row1">
+                    <span id="duplicate" class="badge badge-pill badge-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="howManyLeft" class="text-center">
+                    <h4 id="attemptsRemaining" class="float-right">Attempts left <span id="attempts"
+                            class="float-right"></span></h4>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 offset-6">
+                
+            </div>
+        </div>
+        <div class="animation-area">
+            <ul id="flying-numbers">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
+            <ul id="questionMarks">
+                <li>?</li>
+                <li>?</li>
+                <li>?</li>
+                <li>?</li>
+                <li>?</li>
+                <li>?</li>
+                <li>?</li>
+                <li>?</li>
+                <li>?</li>
+                <li>?</li>
+                <li>?</li>
+                <li>?</li>
+            </ul>
+            <ul >
+                <li id="GameOver1">Game</li>
+                <li id="GameOver2">Over</li>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="code.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

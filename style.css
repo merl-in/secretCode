@@ -1,0 +1,440 @@
+body {
+    font-family: 'Baloo', cursive;
+}
+
+h2 {
+    text-align: center;
+}
+
+.go {
+    animation: fadeOut 5s ease forwards;
+}
+
+#code-grid {
+    background: linear-gradient(269deg, #b7bfce, #cb9807, #fbe01b);
+    background-size: 600% 600%;
+
+    -webkit-box-shadow: 4px 8px 6px 4px rgba(98, 78, 25, 0.91);
+    box-shadow: 4px 8px 6px 4px rgba(98, 78, 25, 0.91);
+
+    -webkit-animation: goldFlash 9s ease infinite;
+    -moz-animation: goldFlash 9s ease infinite;
+    animation: goldFlash 9s ease infinite;
+    
+
+    padding-top: 25px;
+    padding-bottom: 62px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    max-width: 225px;
+
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@-webkit-keyframes goldFlash {
+    0% {
+        background-position: 97% 0%
+    }
+
+    50% {
+        background-position: 4% 100%
+    }
+
+    100% {
+        background-position: 97% 0%
+    }
+}
+
+@-moz-keyframes goldFlash {
+    0% {
+        background-position: 97% 0%
+    }
+
+    50% {
+        background-position: 4% 100%
+    }
+
+    100% {
+        background-position: 97% 0%
+    }
+}
+
+@keyframes goldFlash {
+    0% {
+        background-position: 97% 0%
+    }
+
+    50% {
+        background-position: 4% 100%
+    }
+
+    100% {
+        background-position: 97% 0%
+    }
+}
+
+.digits {
+    display: inline-block;
+    border: solid 6px #d3a40a;
+    border-radius: 50%;
+    text-align: center;
+    padding: 1px;
+    margin-left: 20px;
+    background-color: black;
+    color: white;
+    height: 35px;
+    width: 30px;
+}
+.digits2 {
+    display: inline-block;
+    border: solid 6px #d0d0d0;
+    border-radius: 50%;
+    text-align: center;
+    padding: 1px;
+    margin-left: 5px;
+    background-color: black;
+    color: white;
+    height: 35px;
+    width: 30px;
+}
+
+#col1 {
+    position: absolute;
+}
+
+#col2 {
+    position: absolute;
+    left: 50px;
+}
+
+#col3 {
+    position: absolute;
+    left: 85px;
+}
+
+#col4 {
+    position: absolute;
+    left: 120px;
+}
+
+.up {
+    position: relative;
+    top: -27px;
+    left: 2px;
+    z-index: 100;
+}
+
+.up:hover {
+    cursor: pointer;
+}
+
+.down {
+    position: relative;
+    bottom: -22px;
+    right: 21px;
+    z-index: 100;
+}
+
+.down:hover {
+    cursor: pointer;
+}
+
+#firstEntry {
+    position: relative;
+    left: -9px;
+    top: -4px;
+}
+
+#secondEntry {
+    position: relative;
+    left: -9px;
+    top: -4px;
+}
+
+#thirdEntry {
+    position: relative;
+    left: -9px;
+    top: -4px;
+}
+
+#fourthEntry {
+    position: relative;
+    left: -9px;
+    top: -4px;
+}
+
+#send {
+    background: linear-gradient(269deg, #b7bfce, #cb9807, #fbe01b);
+    background-size: 600% 600%;
+    -webkit-animation: goldFlash 9s ease infinite;
+    -moz-animation: goldFlash 9s ease infinite;
+    animation: goldFlash 9s ease infinite;
+    position: relative;
+    right: -178px;
+    top: 5px;
+    border-radius: 20%;
+    z-index: 100;
+}
+
+#guess-block {
+    background: linear-gradient(269deg, #8badec, aliceblue, #8badec);
+    background-size: 600% 600%;
+    -webkit-animation: goldFlash 9s ease infinite;
+    -moz-animation: goldFlash 9s ease infinite;
+    animation: goldFlash 9s ease infinite;
+    position: relative;
+    top: 12px;
+    background-color: aliceblue;
+    max-width: 225px;
+    padding-left: 35px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    -webkit-box-shadow: 4px 8px 6px 4px rgba(98, 78, 25, 0.91);
+    box-shadow: 4px 8px 6px 4px rgba(98, 78, 25, 0.91);
+}
+
+#guess-firstEntry {
+    position: relative;
+    top: -2px;
+}
+#guess-secondEntry {
+    position: relative;
+    top: -2px;
+}
+#guess-thirdEntry {
+    position: relative;
+    top: -2px;
+}
+#guess-fourthEntry {
+    position: relative;
+    top: -2px;
+}
+#space{
+    padding:20px;
+}
+#howManyLeft {
+    float: left;
+}
+
+#attempts {
+    
+    font-size: 57px;
+}
+#attemptsRemaining {
+    
+}
+
+.animation-area {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
+
+#flying-numbers {
+    list-style: none;
+}
+#flying-numbers li {
+    position: absolute;
+    font-size: 80px;
+    color: rgb(16, 179, 30);
+    display:block;
+    width: 25px;
+    height: 25px;
+    animation: flyingUp 10s linear infinite;
+    bottom: -150px;
+    z-index: -1;
+}
+#flying-numbers li:nth-child(1){
+    left: 86%;
+}
+#flying-numbers li:nth-child(2){
+    left:43%;
+    font-size: 72px;
+    animation-delay: 1.5s;
+    animation-duration: 8s;
+}
+#flying-numbers li:nth-child(3){
+    left: 12%;
+    animation-delay: 5.5s;
+}
+#flying-numbers li:nth-child(4){
+    left: 72%;
+    font-size: 100px;
+    animation-duration: 15s;
+}
+#flying-numbers li:nth-child(5){
+    left: 21%;
+    font-size: 55px;
+    animation-delay: 1s;
+    animation-duration: 6s;
+}
+#flying-numbers li:nth-child(6){
+    left: 93%;
+    animation-delay: 3.5s;
+}
+#flying-numbers li:nth-child(7){
+    left: 35%;
+    font-size: 56px;
+    animation-duration: 7s;
+}
+#flying-numbers li:nth-child(8){
+    left: 67%;
+    font-size: 40px;
+    animation-duration: 5s;
+}
+#flying-numbers li:nth-child(9){
+    left: 11%;
+}
+#questionMarks li{
+    list-style:none;
+    display:block;
+    color: lightgrey;
+    font-size: 50px;
+    position: absolute;
+    left: -70px;
+    animation: qMarks 25s linear infinite;
+    z-index: -1;
+}
+#questionMarks li:nth-child(1){
+    animation-delay: 10s;
+    animation-duration: 8s;
+}
+#questionMarks li:nth-child(2){
+    top: 20%;
+    animation-delay: 7s;
+    animation-duration: 15s;
+}
+#questionMarks li:nth-child(3){
+    top: 35%;
+    animation-delay: 0s;
+}
+#questionMarks li:nth-child(4){
+    top: 50%;
+    animation-delay: 2.3s;
+    animation-duration: 20s;
+}
+#questionMarks li:nth-child(5){
+    top: 65%;
+    animation-delay: 15s;
+    animation-duration: 14s;
+}
+#questionMarks li:nth-child(6){
+    top: 80%;
+    animation-delay: 8s;
+    animation-duration: 14s;
+}
+#questionMarks li:nth-child(7){
+    top: 95%;
+    animation-delay: 4.5s;
+    animation-duration: 17s;
+}
+#questionMarks li:nth-child(8){
+    top: 110%;
+    animation-delay: 1s;
+    animation-duration: 12s;
+}
+#questionMarks li:nth-child(9){
+    top: 125%;
+    animation-delay: 6s;
+    animation-duration: 20s;
+}
+#questionMarks li:nth-child(10){
+    top: 140%;
+    animation-delay: 14s;
+}
+#questionMarks li:nth-child(11){
+    top: 155%;
+    animation-delay: 3.4s;
+    animation-duration: 8s;
+}
+#questionMarks li:nth-child(12){
+    top: 170%;
+    animation-delay: 8.6s;
+}
+
+#GameOver1 {
+    list-style: none;
+    font-size: 90px;
+    font-weight: bolder;
+    position: absolute;
+    left: -25vw;
+    /*left: 38vw;*/
+    top: 20vh;
+    opacity: 0;
+}
+#GameOver2 {
+    list-style: none;
+    font-size: 90px;
+    font-weight: bolder;
+    position: absolute;
+    right: -20vw;
+    /*right: 42vw;*/
+    top: 45vh;
+    opacity: 0;
+}
+
+
+/* Animations */
+
+@keyframes flyingUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: .5;
+    }
+    100% {
+        transform: translateY(-800px) rotate(720deg);
+        opacity:0;
+    }
+}
+@keyframes qMarks {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-600px) translateX(1300px) rotate(3600deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes GameOver1 {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(63vw);
+        opacity: 1;
+    }
+
+}
+
+@keyframes GameOver2 {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-62vw);
+        opacity: 1;
+    }
+
+}
